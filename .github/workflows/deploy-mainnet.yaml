@@ -16,7 +16,7 @@ on:
         type: string
       signer-public-key:
         required: true
-        description: "Public key in TODO format for signing transaction"
+        description: "Public key for signing transactions in the format: `ed25519:<public_key>`"
         type: string
     secrets:
       SIGNER_PRIVATE_KEY:
