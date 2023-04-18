@@ -27,9 +27,9 @@ jobs:
     runs-on: ubuntu-latest
     name: Deploy widgets to social.near (mainnet)
     env:
-      NEAR_SOCIAL_DEPLOY_ID: ${{ input.deploy-account-address }}
-      NEAR_SOCIAL_ACCOUNT_ID: ${{ input.signer-account-address }}
-      NEAR_SOCIAL_ACCOUNT_PUBLIC_KEY: ${{ input.signer-public-key }}
+      NEAR_SOCIAL_DEPLOY_ID: ${{ inputs.deploy-account-address }}
+      NEAR_SOCIAL_ACCOUNT_ID: ${{ inputs.signer-account-address }}
+      NEAR_SOCIAL_ACCOUNT_PUBLIC_KEY: ${{ inputs.signer-public-key }}
       NEAR_SOCIAL_ACCOUNT_PRIVATE_KEY: ${{ secrets.SIGNER_PRIVATE_KEY }}
 
     steps:
